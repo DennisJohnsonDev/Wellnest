@@ -1,0 +1,186 @@
+import 'course.dart';
+
+const cmeCatalogue = [
+  Course(
+    id: 'acls-2026',
+    title: 'Advanced Cardiac Life Support: 2026 Update',
+    provider: 'Emirates Resuscitation Council',
+    category: CmeCategory.cardiology,
+    credits: 8,
+    level: 'Advanced',
+    rating: 4.9,
+    learners: '3.1k',
+    featured: true,
+    summary:
+        'The latest resuscitation science distilled into decisive, team-ready algorithms — from high-performance CPR to post-arrest care bundles.',
+    outcomes: [
+      'Lead a high-performance resuscitation team',
+      'Apply the 2026 tachy- and bradyarrhythmia pathways',
+      'Deliver targeted post-cardiac-arrest care',
+    ],
+    modules: [
+      CourseModule('What changed in 2026', 18, ModuleKind.video),
+      CourseModule('High-performance CPR metrics', 24, ModuleKind.video),
+      CourseModule('Arrhythmia pathways', 32, ModuleKind.reading),
+      CourseModule('Airway in the arrested patient', 22, ModuleKind.video),
+      CourseModule('Simulation: VF storm', 35, ModuleKind.caseStudy),
+      CourseModule('Certification assessment', 25, ModuleKind.assessment),
+    ],
+  ),
+  Course(
+    id: 'heat-illness',
+    title: 'Heat-Related Illness: Recognition & Rapid Cooling',
+    provider: 'Wellnest Academy',
+    category: CmeCategory.emergency,
+    credits: 2,
+    level: 'Core',
+    rating: 4.8,
+    learners: '5.6k',
+    summary:
+        'A focused field guide to exertional heat stroke — triage in the first ten minutes, cold-water immersion, and safe return to work.',
+    outcomes: [
+      'Differentiate heat exhaustion from heat stroke at the bedside',
+      'Run an on-site cold-water immersion protocol',
+    ],
+    modules: [
+      CourseModule('Thermoregulation under pressure', 12, ModuleKind.video),
+      CourseModule('The first ten minutes', 16, ModuleKind.caseStudy),
+      CourseModule('Knowledge check', 10, ModuleKind.assessment),
+    ],
+  ),
+  Course(
+    id: 'ramadan-diabetes',
+    title: 'Diabetes Care During Ramadan Fasting',
+    provider: 'Gulf Endocrine Society',
+    category: CmeCategory.endocrinology,
+    credits: 3,
+    level: 'Intermediate',
+    rating: 4.9,
+    learners: '4.2k',
+    summary:
+        'Risk-stratify, counsel and adjust therapy so patients can fast safely — with dosing tables for every major drug class.',
+    outcomes: [
+      'Stratify fasting risk using validated scores',
+      'Titrate insulin and oral agents around suhoor and iftar',
+    ],
+    modules: [
+      CourseModule('Physiology of the fast', 14, ModuleKind.video),
+      CourseModule('Risk stratification', 20, ModuleKind.reading),
+      CourseModule('Adjusting therapy', 26, ModuleKind.caseStudy),
+      CourseModule('Assessment', 12, ModuleKind.assessment),
+    ],
+  ),
+  Course(
+    id: 'uae-ethics',
+    title: 'Medical Ethics & UAE Health Law',
+    provider: 'Wellnest Academy',
+    category: CmeCategory.ethics,
+    credits: 3,
+    level: 'Mandatory',
+    rating: 4.7,
+    learners: '9.8k',
+    mandatory: true,
+    summary:
+        'Consent, confidentiality and medical liability under federal law, illustrated with real-world case reviews.',
+    outcomes: [
+      'Apply federal consent requirements in practice',
+      'Recognise reportable events and liability thresholds',
+    ],
+    modules: [
+      CourseModule('Consent and capacity', 18, ModuleKind.reading),
+      CourseModule('Confidentiality in the digital age', 16, ModuleKind.video),
+      CourseModule('Liability case reviews', 24, ModuleKind.caseStudy),
+      CourseModule('Assessment', 14, ModuleKind.assessment),
+    ],
+  ),
+  Course(
+    id: 'cardiac-mri',
+    title: 'Cardiac MRI: Reading the Essentials',
+    provider: 'Al Waha Imaging Faculty',
+    category: CmeCategory.cardiology,
+    credits: 6,
+    level: 'Advanced',
+    rating: 4.8,
+    learners: '1.4k',
+    summary:
+        'Systematic reporting of cine, perfusion and late-gadolinium sequences, with a library of annotated cases.',
+    outcomes: [
+      'Report a standard cardiac MRI study end to end',
+      'Recognise ischaemic and non-ischaemic enhancement patterns',
+    ],
+    modules: [
+      CourseModule('Sequences decoded', 22, ModuleKind.video),
+      CourseModule('Function and volumes', 26, ModuleKind.reading),
+      CourseModule('Tissue characterisation', 30, ModuleKind.video),
+      CourseModule('Annotated case library', 40, ModuleKind.caseStudy),
+      CourseModule('Assessment', 20, ModuleKind.assessment),
+    ],
+  ),
+  Course(
+    id: 'stewardship',
+    title: 'Antimicrobial Stewardship in Practice',
+    provider: 'Arabian Infection Society',
+    category: CmeCategory.infectious,
+    credits: 4,
+    level: 'Intermediate',
+    rating: 4.6,
+    learners: '2.7k',
+    summary:
+        'Practical prescribing strategies to slow resistance — empirical choices, de-escalation and audit loops that work on busy wards.',
+    outcomes: [
+      'Choose empirical therapy using local antibiograms',
+      'Build a de-escalation habit into ward rounds',
+    ],
+    modules: [
+      CourseModule('Resistance in the Gulf', 16, ModuleKind.video),
+      CourseModule('Empirical therapy', 24, ModuleKind.reading),
+      CourseModule('De-escalation rounds', 22, ModuleKind.caseStudy),
+      CourseModule('Assessment', 14, ModuleKind.assessment),
+    ],
+  ),
+  Course(
+    id: 'genomic-medicine',
+    title: 'Genomic Medicine for Clinicians',
+    provider: 'Emirates Genome Programme',
+    category: CmeCategory.genomics,
+    credits: 5,
+    level: 'Intermediate',
+    rating: 4.8,
+    learners: '1.9k',
+    summary:
+        'From variant reports to family conversations — how to order, read and act on genomic testing with confidence.',
+    outcomes: [
+      'Interpret variant classifications correctly',
+      'Counsel families on cascade testing',
+    ],
+    modules: [
+      CourseModule('Genomics in clinical care', 18, ModuleKind.video),
+      CourseModule('Reading a variant report', 26, ModuleKind.reading),
+      CourseModule('Pharmacogenomics', 20, ModuleKind.video),
+      CourseModule('Family conversations', 22, ModuleKind.caseStudy),
+      CourseModule('Assessment', 16, ModuleKind.assessment),
+    ],
+  ),
+  Course(
+    id: 'paeds-airway',
+    title: 'Paediatric Emergency Airway',
+    provider: 'Emirates Resuscitation Council',
+    category: CmeCategory.emergency,
+    credits: 4,
+    level: 'Advanced',
+    rating: 4.9,
+    learners: '2.2k',
+    summary:
+        'Anatomy, equipment sizing and crisis checklists for the child who cannot breathe — rehearsed through immersive scenarios.',
+    outcomes: [
+      'Size equipment rapidly with weight-based tools',
+      'Lead a can’t-intubate, can’t-oxygenate response',
+    ],
+    modules: [
+      CourseModule('The paediatric airway', 18, ModuleKind.video),
+      CourseModule('Equipment and drugs', 20, ModuleKind.reading),
+      CourseModule('Crisis scenarios', 30, ModuleKind.caseStudy),
+      CourseModule('Assessment', 14, ModuleKind.assessment),
+    ],
+  ),
+];
